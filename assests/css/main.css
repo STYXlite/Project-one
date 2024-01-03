@@ -1573,7 +1573,6 @@ body {
         margin-right: 0;
     }
 
-
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -1718,18 +1717,15 @@ body {
     .creative-description p {
         font-size: 1.2rem;
     }
-
-
+    
     .card-section .box {
         flex: 0 0 calc(33.33% - 20px);
     }
 
-
     .testimonials .box {
         flex: 1 1 calc(50% - 20px); 
     }
-
- 
+    
     .pricing .pricing-plans {
         flex-direction: row;
         justify-content: space-between;
@@ -1739,7 +1735,6 @@ body {
         width: calc(50% - 40px); 
         margin: 0 20px;
     }
-
  
     .footer-section-group {
         justify-content: space-between;
@@ -1750,24 +1745,20 @@ body {
     }
 }
 
-
 @media (min-width: 1400px) {
     .container {
-        width: calc(100% - 300px); /* Larger fixed-width container for wider screens */
+        width: calc(100% - 300px); 
     }
 
-    /* Adjust navigation for more space */
     .navbar .head-text ul {
-        gap: 30px; /* Increase gap for navigation links */
+        gap: 30px; 
     }
-
-    /* Adjust padding and font sizes for larger displays */
     .navbar {
         padding: 1.5rem 2.5rem;
     }
 
     .top-creative .subtop-creative h1 {
-        font-size: 3rem; /* Larger text for extra large screens */
+        font-size: 3rem; 
     }
 
     .creative-description h1 {
@@ -1778,7 +1769,6 @@ body {
         font-size: 1.5rem;
     }
 
-   
     .course-overview-section .box {
         flex: 1 1 calc(33.33% - 20px); 
     }
@@ -1787,7 +1777,6 @@ body {
         flex-direction: row;
         gap: 60px;
     }
-
     .social-icons a {
         width: 50px; 
         height: 50px;
