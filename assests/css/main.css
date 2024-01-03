@@ -169,8 +169,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    backdrop-filter: blur(35px);
-
+    background-color: var(--planBack);
 }
 
 .dropdown_menu li {
