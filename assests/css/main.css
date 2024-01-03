@@ -312,6 +312,7 @@ body {
 /* COMPAINES LOGO */
 .companies {
     width: 100%;
+    margin-top:1rem;
 }
 
 .companies .container .row {
@@ -1165,7 +1166,9 @@ body {
         position: fixed;
         z-index: 4;
     }
-
+  .creative-buttons{ 
+      margin-bottom:1rem;
+  }
     .subtop-creative .icon {
         padding: 4px 6px;
     }
