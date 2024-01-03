@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./assests/css/main.css">
+    <title>Alhaj Project</title>
+    <link rel="icon" href="assests/images/icons/icon.webp" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="head-left">
+                <div class="header-logo">
+                    <img src="assests/images/logo/logo.svg" alt="logo">
+                </div>
+                <div class="head-text">
+                    <ul class="head-text">
+                        <li class="header-bold">
+                            <a href="Hero">home</a>
+                        </li>
+                        <li>
+                            <a href="Course">course</a>
+                        </li>
+                        <li>
+                            <a href="About Us">about us</a>
+                        </li>
+                        <li>
+                            <a href="Pricing">pricing</a>
+                        </li>
+                        <li>
+                            <a href="Contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="auth">
+                <div class="auth-signUp">
+                    <a href="#">Sign Up</a>
+                </div>
+                <div class="auth-login">
+                    <a href="#">Login</a>
+                </div>
+            </div>
+            <div class="toggle_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.25 10.0625C4.25 9.4757 4.7257 9 5.3125 9H28.6875C29.2743 9 29.75 9.4757 29.75 10.0625C29.75 10.6493 29.2743 11.125 28.6875 11.125H5.3125C4.7257 11.125 4.25 10.6493 4.25 10.0625ZM4.25 17.5C4.25 16.9132 4.7257 16.4375 5.3125 16.4375H28.6875C29.2743 16.4375 29.75 16.9132 29.75 17.5C29.75 18.0868 29.2743 18.5625 28.6875 18.5625H5.3125C4.7257 18.5625 4.25 18.0868 4.25 17.5ZM15.9375 24.9375C15.9375 24.3507 16.4132 23.875 17 23.875H28.6875C29.2743 23.875 29.75 24.3507 29.75 24.9375C29.75 25.5243 29.2743 26 28.6875 26H17C16.4132 26 15.9375 25.5243 15.9375 24.9375Z"
+                        fill="#262626" />
+                </svg>
+            </div>
+            <div class="dropdown_menu">
+                <li>
+                    <a href="home">home</a>
+                </li>
+                <li>
+                    <a href="Course">course</a>
+                </li>
+                <li>
+                    <a href="About Us">about us</a>
+                </li>
+                <li>
+                    <a href="Pricing">pricing</a>
+                </li>
+                <li>
+                    <a href="Contact">contact</a>
+                </li>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const togglebtn = document.querySelector('.toggle_btn');
+            const toggleBtnIcon = document.querySelector('.toggle_btn svg');
+            const dropDownMenu = document.querySelector('.dropdown_menu');
+
+            togglebtn.addEventListener('click', function () {
+                dropDownMenu.classList.toggle('open');
+                const isOpen = dropDownMenu.classList.contains('open');
+                toggleBtnIcon.innerHTML = isOpen
+                    ? '<path fill="#262626" d="M4.25 10.0625C4.25 9.4757 4.7257 9 5.3125 9H28.6875C29.2743 9 29.75 9.4757 29.75 10.0625C29.75 10.6493 29.2743 11.125 28.6875 11.125H5.3125C4.7257 11.125 4.25 10.6493 4.25 10.0625ZM4.25 17.5C4.25 16.9132 4.7257 16.4375 5.3125 16.4375H28.6875C29.2743 16.4375 29.75 16.9132 29.75 17.5C29.75 18.0868 29.2743 18.5625 28.6875 18.5625H5.3125C4.7257 18.5625 4.25 18.0868 4.25 17.5ZM17 24.9375C16.4132 24.9375 15.9375 25.4132 15.9375 26C15.9375 26.5868 16.4132 27.0625 17 27.0625H28.6875C29.2743 27.0625 29.75 26.5868 29.75 26C29.75 25.4132 29.2743 24.9375 28.6875 24.9375H17Z"/>'
+                    : '<path fill-rule="evenodd" clip-rule="evenodd" d="M4.25 10.0625C4.25 9.4757 4.7257 9 5.3125 9H28.6875C29.2743 9 29.75 9.4757 29.75 10.0625C29.75 10.6493 29.2743 11.125 28.6875 11.125H5.3125C4.7257 11.125 4.25 10.6493 4.25 10.0625ZM4.25 17.5C4.25 16.9132 4.7257 16.4375 5.3125 16.4375H28.6875C29.2743 16.4375 29.75 16.9132 29.75 17.5C29.75 18.0868 29.2743 18.5625 28.6875 18.5625H5.3125C4.7257 18.5625 4.25 18.0868 4.25 17.5ZM17 24.9375C16.4132 24.9375 15.9375 25.4132 15.9375 26C15.9375 26.5868 16.4132 27.0625 17 27.0625H28.6875C29.2743 27.0625 29.75 26.5868 29.75 26C29.75 25.4132 29.2743 24.9375 28.6875 24.9375H17Z" fill="#262626"/>';
+            });
+        });
+    </script>
+    <main>
+        <section class="top-creative">
+            <div class="subtop-creative">
+                <div class="icon"><img src="assests/images/icons/lightning.svg" width="35" height="35"></div>
+                <h1><span class="first-word">Unlock</span> Your Creative Potential</h1>
+            </div>
+            <br>
+            <div class="creative-description">
+                <h1>with Online Design and Development Courses.</h1>
+                <p>Learn from Industry Experts and Enhance Your Skills.</p>
+            </div>
+            <div class="creative-buttons">
+                <div class="explore-btn">
+                    <a href="Explore">Explore Courses</a>
+                </div>
+                <div class="pricing-btn">
+                    <a href="View Pricing">View Pricing</a>
+                </div>
+            </div>
+        </section> <!-- #region -->
+        <section class="companies">
+            <div class="container">
+                <div class="row">
+                    <img src="assests/images/logo/zapier.svg" alt="zapier">
+                    <div class="line"></div>
+                    <img src="assests/images/logo/spotify.svg" alt="spotify">
+                    <div class="line"></div>
+                    <img src="assests/images/logo/zoom.svg" alt="zoom">
+                    <div class="line"></div>
+                    <img src="assests/images/logo/amazon.svg" alt="amazon">
+                    <div class="line"></div>
+                    <img src="assests/images/logo/adobe.svg" alt="adobe">
+                    <div class="line"></div>
+                    <img src="assests/images/logo/notion.svg" alt="notion">
+                    <div class="line"></div>
+                    <img src="assests/images/logo/netflix.svg" alt="netflix">
+                </div>
+            </div>
+        </section>
+        <section class="Site-Describe">
+            <div class="container">
+                <div class="image">
+                    <img src="assests/images/img/image1.png" width="1920" height="1080" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits-head">
+                    <h1>benefits</h1>
+                </div>
+                <div class="benefits-separate">
+                    <div class="benefits-descreption">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
+                            eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in
+                            velit
+                            fringilla feugiat senectus in.</p>
+                    </div>
+                    <div class="view-btn"><a href="#">view all</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="container">
+                <div class="box-row">
+                    <div class="box">
+                        <h1>01</h1>
+                        <div class="card-description">
+                            <h1>Flexible Learning Schedule</h1>
+                            <p>Fit your coursework around your existing commitments and obligations.</p>
+                        </div>
+                        <div class="card-btn"><img src="assests/images/icons/arrow.svg" alt="arrow"></div>
+                    </div>
+                    <div class="box">
+                        <h1>02</h1>
+                        <div class="card-description">
+                            <h1>Expert Instruction</h1>
+                            <p>Learn from industry experts who have hands-on experience in design and development.</p>
+                        </div>
+                        <div class="card-btn"><img src="assests/images/icons/arrow.svg" alt="arrow"></div>
+                    </div>
+                    <div class="box">
+                        <h1>03</h1>
+                        <div class="card-description">
+                            <h1>Diverse Course Offerings</h1>
+                            <p>Explore a wide range of design and development courses covering various topics.</p>
+                        </div>
+                        <div class="card-btn"><img src="assests/images/icons/arrow.svg" alt="arrow"></div>
+                    </div>
+                </div>
+                <div class="box-row">
+                    <div class="box">
+                        <h1>04</h1>
+                        <div class="card-description">
+                            <h1>Updated Curriculum</h1>
+                            <p>Access courses with up-to-date content reflecting the latest trends and industry
+                                practices.</p>
+                        </div>
+                        <div class="card-btn"><img src="assests/images/icons/arrow.svg" alt="arrow"></div>
+                    </div>
+                    <div class="box">
+                        <h1>05</h1>
+                        <div class="card-description">
+                            <h1>Flexible Learning Schedule</h1>
+                            <p>Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+                        </div>
+                        <div class="card-btn"><img src="assests/images/icons/arrow.svg" alt="arrow"></div>
+                    </div>
+                    <div class="box">
+                        <h1>06</h1>
+                        <div class="card-description">
+                            <h1>Interactive Learning Environment</h1>
+                            <p>Collaborate with fellow learners, exchanging ideas and feedback to enhance your
+                                understanding.</p>
+                        </div>
+                        <div class="card-btn"><img src="assests/images/icons/arrow.svg" alt="arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="courses-header-section">
+            <div class="container">
+                <div class="course-head">
+                    <h1>Our Courses</h1>
+                </div>
+                <div class="course-separate">
+                    <div class="course-descreption">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
+                            eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in
+                            velit
+                            fringilla feugiat senectus in.</p>
+                    </div>
+                    <div class="view-btn"><a href="#">view all</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="course-overview-section">
+            <div class="container">
+                <div class="box-row">
+                    <div class="box">
+                        <div class="course-img">
+                            <img src="assests/images/img/Image2.png" alt="">
+                        </div>
+                        <div class="below-img">
+                            <div class="course-outline">
+                                <a href="#">4 weeks </a>
+                                <a href="#">Beginner </a>
+                            </div>
+                            <div class="course-teacher">By John Smith</div>
+                        </div>
+                        <div class="course-descreption">
+                            <h1>Web Design Fundamentals</h1>
+                            <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design
+                                principles. Develop the skills to create visually appealing and user-friendly websites.
+                            </p>
+                        </div>
+                        <div class="course-btn"><a href="#">Get it Now</a></div>
+
+                    </div>
+                    <div class="box">
+                        <div class="course-img">
+                            <img src="assests/images/img/Image3.png" alt="">
+                        </div>
+                        <div class="below-img">
+                            <div class="course-outline">
+                                <a href="#">6 weeks </a>
+                                <a href="#">Intermediate </a>
+                            </div>
+                            <div class="course-teacher">By Emily Johnson</div>
+                        </div>
+                        <div class="course-descreption">
+                            <h1>UI/UX Design</h1>
+                            <p>Master the art of creating intuitive user interfaces (UI) and enhancing user experiences
+                                (UX). Learn design principles, wireframing, prototyping, and usability testing
+                                techniques.</p>
+                        </div>
+                        <div class="course-btn"><a href="#">Get it Now</a></div>
+
+                    </div>
+                </div>
+                <div class="box-row">
+                    <div class="box">
+                        <div class="course-img">
+                            <img src="assests/images/img/Image4.png" alt="">
+                        </div>
+                        <div class="below-img">
+                            <div class="course-outline">
+                                <a href="#">8 weeks </a>
+                                <a href="#">Intermediate </a>
+                            </div>
+                            <div class="course-teacher">By David Brown</div>
+                        </div>
+                        <div class="course-descreption">
+                            <h1>Mobile App Development</h1>
+                            <p>Dive into the world of mobile app development. Learn to build native iOS and Android
+                                applications using industry-leading frameworks like Swift and Kotlin.</p>
+                        </div>
+                        <div class="course-btn"><a href="#">Get it Now</a></div>
+
+                    </div>
+                    <div class="box">
+                        <div class="course-img">
+                            <img src="assests/images/img/Image5.png" alt="">
+                        </div>
+                        <div class="below-img">
+                            <div class="course-outline">
+                                <a href="#">10 weeks </a>
+                                <a href="#">Beginner </a>
+                            </div>
+                            <div class="course-teacher">By Sarah Thompson</div>
+                        </div>
+                        <div class="course-descreption">
+                            <h1>Graphic Design for Beginners</h1>
+                            <p>Discover the fundamentals of graphic design, including typography, color theory, layout
+                                design, and image manipulation techniques. Create visually stunning designs for print
+                                and digital media.</p>
+                        </div>
+                        <div class="course-btn"><a href="#">Get it Now</a></div>
+
+                    </div>
+                </div>
+                <div class="box-row">
+                    <div class="box">
+                        <div class="course-img">
+                            <img src="assests/images/img/Image6.png" alt="">
+                        </div>
+                        <div class="below-img">
+                            <div class="course-outline">
+                                <a href="#">10 weeks </a>
+                                <a href="#">Intemediate </a>
+                            </div>
+                            <div class="course-teacher">By Michael Adams</div>
+                        </div>
+                        <div class="course-descreption">
+                            <h1>Front-End Web Development</h1>
+                            <p>Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular
+                                frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
+                        </div>
+                        <div class="course-btn"><a href="#">Get it Now</a></div>
+
+                    </div>
+                    <div class="box">
+                        <div class="course-img">
+                            <img src="assests/images/img/Image7.png" alt="">
+                        </div>
+                        <div class="below-img">
+                            <div class="course-outline">
+                                <a href="#">6 weeks </a>
+                                <a href="#">Advance</a>
+                            </div>
+                            <div class="course-teacher">By Jennifer Wilson</div>
+                        </div>
+                        <div class="course-descreption">
+                            <h1>Advanced JavaScript</h1>
+                            <p>Take your JavaScript skills to the next level. Explore advanced concepts like closures,
+                                prototypes, asynchronous programming, and ES6 features. Build complex applications with
+                                confidence.</p>
+                        </div>
+                        <div class="course-btn"><a href="#">Get it Now</a></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonials-head">
+                    <h1>Our Testimonials</h1>
+                </div>
+                <div class="testimonials-separate">
+                    <div class="testimonials-descreption">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
+                            eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in
+                            velit
+                            fringilla feugiat senectus in.</p>
+                    </div>
+                    <div class="view-btn"><a href="#">view all</a></div>
+                </div>
+                <div class="box-row">
+                    <div class="box">
+                        <div class="testimonials-paragraph">The web design course provided a solid foundation for me.
+                            The
+                            instructors were knowledgeable and supportive, and the interactive learning environment was
+                            engaging. I highly recommend it!</div>
+                        <div class="testimonials-client">
+                            <div class="client">
+                                <img src="assests/images/img/Sarah.png" alt="Sarah Larsson">
+                                <h1>Zara Larsson</h1>
+                            </div>
+                            <div class="client-btn">Read Full Story</div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="testimonials-paragraph">The UI/UX design course exceeded my expectations. The
+                            instructor's expertise and practical assignments helped me improve my design skills. I feel
+                            more confident in my career now. Thank you!</div>
+                        <div class="testimonials-client">
+                            <div class="client">
+                                <img src="assests/images/img/Jason.png" alt="Jason Martinelli">
+                                <h1>Jason Martinelli</h1>
+                            </div>
+                            <div class="client-btn">Read Full Story</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-row">
+                    <div class="box">
+                        <div class="testimonials-paragraph">The mobile app development course was fantastic! The
+                            step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now
+                            building my own app. Great course!</div>
+                        <div class="testimonials-client">
+                            <div class="client">
+                                <img src="assests/images/img/Emily.png" alt="Emily Rashford">
+                                <h1>Emily Rashford</h1>
+                            </div>
+                            <div class="client-btn">Read Full Story</div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="testimonials-paragraph">I enrolled in the graphic design course as a beginner, and
+                            it was the perfect starting point. The instructor's guidance and feedback improved my design
+                            abilities significantly. I'm grateful for this course!
+                        </div>
+                        <div class="testimonials-client">
+                            <div class="client">
+                                <img src="assests/images/img/Michael.png" alt="Michael Essien">
+                                <h1>Michael Essien</h1>
+                            </div>
+                            <div class="client-btn">Read Full Story</div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="pricing">
+            <div class="container">
+                <div class="pricing-head">
+                    <h1>Our Pricing</h1>
+                </div>
+                <div class="pricing-separate">
+                    <div class="pricing-descreption">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
+                            eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in
+                            velit
+                            fringilla feugiat senectus in.</p>
+                    </div>
+                    <div class="pricing-toggle">
+                        <button class="toggle-monthly active">Monthly</button>
+                        <button class="toggle-yearly">Yearly</button>
+                    </div>
+                </div>
+
+                <div class="pricing-plans">
+                    <!-- Free Plan -->
+                    <div class="pricing-plan free-plan">
+                        <h3 class="plan-title">Free Plan</h3>
+                        <p class="plan-price">$0<span class="plan-duration">/month</span></p>
+                        <ul class="plan-features">
+                            <h4 class="features-head">Available features</h4>
+                            <li class="features-check">
+                                <img src="assests/images/icons/trueCheck.svg" class="check-style"
+                                    alt="True Check">Access to selected free courses
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/trueCheck.svg" class="check-style"
+                                    alt="True Check">Limited course materials and resources.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/trueCheck.svg" class="check-style" alt="True Check">Basic
+                                community support.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/falseCheck.svg" class="check-style false"
+                                    alt="false Check"> Course Completion Certificates.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/falseCheck.svg" class="check-style false"
+                                    alt="false Check">Ad-free experience.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/falseCheck.svg" class="check-style false"
+                                    alt="false Check">Access to exclusive Pro Plan community forums.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/falseCheck.svg" class="check-style false"
+                                    alt="false Check">Early access to new courses and updates.
+                            </li>
+                        </ul>
+                        <button class="plan-cta">Get Started</button>
+                    </div>
+                    <!-- Pro Plan -->
+                    <div class="pricing-plan pro-plan">
+                        <h3 class="plan-title">Pro Plan</h3>
+                        <p class="plan-price">$79<span class="plan-duration">/month</span></p>
+                        <ul class="plan-features">
+                            <h4 class="features-head">Available features</h4>
+                            <li class="features-check">
+                                <img src="assests/images/icons/trueCheck.svg" class="check-style"
+                                    alt="True Check">Unlimited access to all courses.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/trueCheck.svg" class="check-style"
+                                    alt="True Check">Unlimited course materials and resources.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/trueCheck.svg" class="check-style"
+                                    alt="True Check">Priority support from instructors.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/trueCheck.svg" class="check-style"
+                                    alt="True Check">Course completion certificates.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/trueCheck.svg" class="check-style"
+                                    alt="True Check">Ad-free experience.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/trueCheck.svg" class="check-style"
+                                    alt="True Check">Access to exclusive Pro Plan community forums.
+                            </li>
+                            <li class="features-check">
+                                <img src="assests/images/icons/trueCheck.svg" class="check-style" alt="True Check">Early
+                                access to new courses and updates.
+                            </li>
+                        </ul>
+                        <button class="plan-cta">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <a href="/" class="footer-logo">
+                    <img src="assests/images/logo/logo.svg" alt="Skillbridge Logo" />
+                </a>
+                <div class="contact-item">
+                    <img src="assests/images/icons/mail.svg" alt="mail" class="contact-icon">
+                    <a href="mailto:ahmadalhajpsd61@gmail.com" class="contact-text">alhaj@icloud.com</a>
+                </div>
+                <div class="contact-item">
+                    <img src="assests/images/icons/phone.svg" alt="phone" class="contact-icon">
+                    <a href="tel:+972595867649" class="contact-text">+972 595-867-649</a>
+                </div>
+                <div class="contact-item">
+                    <img src="assests/images/icons/location.svg" alt="location" class="contact-icon">
+                    <a href="#" class="contact-text">Jenin - Palestine</a>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-section-group">
+                <div class="home-about-wrapper">
+                    <div class="footer-section -active">
+                        <h4>Home</h4>
+                        <ul>
+                            <li><a href="/benefits">Benefits</a></li>
+                            <li><a href="/courses">Our Courses</a></li>
+                            <li><a href="/testimonials">Our Testimonials</a></li>
+                            <li><a href="/faq">Our FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section -active">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="/company">Company</a></li>
+                            <li><a href="/achievements">Achievements</a></li>
+                            <li><a href="/goals">Our Goals</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Social Profiles -->
+                <div class="footer-section -separate">
+                    <h4>Social Profiles</h4>
+                    <div class="social-icons">
+                        <a href="https://www.fb.com/ahmad.alhajpsd" target="_blank" rel="noopener noreferrer">
+                            <img src="assests/images/icons/facebook.svg" alt="Facebook" />
+                        </a>
+                        <a href="https://twitter.com/ahmad7alhaj" target="_blank" rel="noopener noreferrer">
+                            <img src="assests/images/icons/x.svg" alt="Twitter" />
+                        </a>
+                        <a href="https://www.instagram.com/ri7rz" target="_blank" rel="noopener noreferrer">
+                            <img src="assests/images/icons/linkedin.svg" alt="instagram" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>© 2023 Ahmad Alhaj. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1793 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Inter&family=Poppins:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --maincolor: #FF9500;
+    --subONEcolor: #262626;
+    --subcolor: #ffffff;
+    --subBackColor: #F7F7F8;
+    --subHeader: #333;
+    --subParagraph: #4C4C4D;
+    --planBack: #FFF9F0;
+}
+
+.container {
+    width: calc(100% - 326px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--maincolor);
+}
+
+.navbar .auth-login a:hover {
+    color: var(--subONEcolor);
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--subBackColor);
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+
+
+/* ------END OF PUBLIC----------- */
+/* ----- header ----- */
+
+
+.navbar {
+    top: 0;
+    position: sticky;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 0px 1px 0px #a5a3a3;
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+    font-family: "Be Vietnam Pro";
+    background-color: var(--subcolor);
+    z-index: 1000;
+}
+
+.header-logo {
+    background-color: var(--maincolor);
+    border-radius: 8px;
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.navbar a {
+    color: var(--subONEcolor);
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head-left {
+    display: flex;
+    align-items: center;
+    gap: 16.5px;
+    text-transform: capitalize;
+
+}
+
+.container .head-text {
+    gap: 16.5px;
+
+}
+
+.head-text ul {
+    display: flex;
+    text-align: center;
+    gap: 16.5px;
+
+}
+
+.head-text ul li {
+    border-radius: 8px;
+    background-color: var(--subcolors);
+    display: flex;
+    width: fit-content;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-text .header-bold {
+    border-radius: 8px;
+    background-color: var(--subBackColor);
+    display: flex;
+    width: fit-content;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.auth {
+    display: flex;
+    gap: 10px;
+}
+
+.auth .auth-login a {
+    color: var(--subcolor);
+}
+
+.auth .auth-signUp,
+.auth-login {
+    border-radius: 8px;
+    display: flex;
+    width: fit-content;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5px;
+    cursor: pointer;
+}
+
+.auth-login {
+    background-color: var(--maincolor);
+}
+
+.navbar .toggle_btn {
+    color: #262626;
+    display: none;
+    cursor: pointer;
+}
+
+/* dropdown menu */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 90px;
+    height: 0;
+    width: 300px;
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+}
+
+.dropdown_menu li a {
+    color: var(--subONEcolor);
+    text-transform: capitalize;
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu a:hover {
+    color: var(--maincolor);
+}
+
+/* dropdown menuu */
+
+/* ----- header end  ----- */
+.top-creative {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--subcolor);
+    height: calc(75vh - 90px);
+    padding: 1px 20px;
+    gap: 10px;
+    background-color: var(--subBackColor);
+}
+
+/*
+.top-icon {
+    position: absolute;
+    left: 25.5%;
+    top: 27.4%;
+    transform: translateY(-50%);
+}
+*/
+
+.top-creative .icon {
+    background-color: #FFF4E5;
+    border-radius: 12px;
+    padding: 8px 12px;
+
+}
+
+.top-creative .subtop-creative img {
+    width: 45px;
+    height: 45px;
+}
+
+.top-creative .subtop-creative {
+    margin-top: 10.7rem;
+    background-color: var(--subcolor);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 1.2rem;
+    box-shadow: 0px 0px 1px 0px #a5a3a3;
+    border: 1px solid #F1F1F3;
+}
+
+.subtop-creative .first-word {
+    color: var(--maincolor)
+}
+
+.creative-description {
+    margin-top: -1.3rem;
+    text-align: center;
+    line-height: 3rem;
+    color: var(--subONEcolor);
+}
+
+.creative-description h1 {
+    font-size: 2.425rem;
+    font-weight: 500;
+
+}
+
+.creative-description p {
+    font-size: 1.4rem;
+}
+
+.creative-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem;
+
+}
+
+.creative-buttons .explore-btn,
+.pricing-btn {
+    border-radius: 8px;
+    padding: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 0px #a5a3a3;
+    font-size: 1.2rem;
+}
+
+.creative-buttons .explore-btn {
+    background-color: var(--maincolor);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.creative-buttons .explore-btn a {
+    color: var(--subcolor)
+}
+
+.creative-buttons .pricing-btn {
+    background-color: var(--subcolor);
+    transition: transform 0.3s ease-in-out;
+}
+
+.creative-buttons .pricing-btn a {
+    color: var(--subONEcolor);
+}
+
+.creative-buttons .explore-btn:hover,
+.pricing-btn:hover {
+    transform: translateY(-5px);
+}
+
+/* END of Creative */
+
+/* COMPAINES LOGO */
+.companies {
+    width: 100%;
+}
+
+.companies .container .row {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--subcolor);
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px #a5a3a3;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.companies .line {
+    height: 4.5rem;
+    width: 1px;
+    background-color: #70809040;
+}
+
+/* END OF COMPANIES */
+
+/* PHOTO */
+
+.Site-Describe {
+    margin-top: 5.5rem;
+}
+
+.Site-Describe .image img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* PHOTO END*/
+/* Benefits */
+.benefits {
+    margin-top: 5rem;
+    display: flex;
+    text-transform: capitalize;
+}
+
+.benefits .container {
+    background-color: var(--subBackColor);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits .benefits-head h1 {
+    margin-bottom: 15px;
+    font-size: 2.425rem;
+}
+
+.benefits .benefits-separate {
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.benefits .benefits-descreption {
+    width: 60%;
+}
+
+.benefits .view-btn {
+    background-color: var(--subcolor);
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: fit-content;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.benefits .view-btn:hover {
+    transform: translateY(-5px);
+}
+
+.benefits a {
+    color: var(--subONEcolor);
+}
+
+.benefits p {
+    color: var(--subParagraph);
+}
+
+/* END OF BENEFITS */
+/* card section */
+
+
+.card-section {
+    margin-top: 5rem;
+    background-color: var(--subBackColor);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.card-section .box-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card-section .box {
+    flex: 0 0 calc(33.33% - 20px);
+    background-color: var(--subcolor);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+.card-section .box h1 {
+    text-align: right;
+    margin: 0;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--subHeader);
+}
+
+.card-section .card-description h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    width: 80%;
+    margin-bottom: 1rem;
+
+}
+
+.card-section .card-description p {
+    margin-bottom: 12rem;
+    width: 80%;
+    color: var(--subParagraph);
+}
+
+.card-section .box .card-description {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.card-section .box .card-btn {
+    background-color: var(--subBackColor);
+    border-radius: 8px;
+    padding: 8px 14px;
+    width: fit-content;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-section .card-btn:hover {
+    transform: translateY(-5px);
+
+}
+
+.card-section .box .card-btn img {
+    margin-top: 8px;
+}
+
+.card-section .box .card-paragraph {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* card end */
+/* courses */
+.courses-header-section {
+    margin-top: 5rem;
+    display: flex;
+    text-transform: capitalize;
+}
+
+.courses-header-section .container {
+    background-color: var(--subBackColor);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-header-section .course-head h1 {
+    margin-bottom: 15px;
+    font-size: 2.425rem;
+}
+
+.courses-header-section .course-separate {
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.courses-header-section .course-descreption {
+    width: 60%;
+}
+
+.courses-header-section .view-btn {
+    background-color: var(--subcolor);
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: fit-content;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.courses-header-section .view-btn:hover {
+    transform: translateY(-5px);
+}
+
+.courses-header-section a {
+    color: var(--subONEcolor);
+}
+
+.courses-header-section p {
+    color: var(--subParagraph);
+}
+
+/* END OF COURSES HEADER */
+/* courses images */
+
+.course-overview-section .box-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.course-overview-section .box {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    background-color: var(--subcolor);
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-overview-section .box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.course-overview-section .box:nth-child(even) {
+    margin-right: 0;
+}
+
+.course-overview-section .below-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.course-overview-section .course-outline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.course-overview-section .course-teacher {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--subONEcolor);
+}
+
+
+.course-overview-section .course-outline a {
+    color: var(--subParagraph);
+    margin-right: 10px;
+
+}
+
+.course-overview-section .course-btn,
+.course-overview-section .course-descreption {
+    flex: 1 1 100%;
+}
+
+.course-overview-section .course-outline :nth-child(1),
+.course-overview-section .course-outline :nth-child(2),
+.course-overview-section .course-btn {
+    background-color: var(--subBackColor);
+    border-radius: 8px;
+    padding: 6px 10px;
+    box-shadow: 0px 0px 1px 0px #a5a3a3;
+    cursor: help;
+}
+
+.course-overview-section .course-descreption {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.course-overview-section .course-descreption p {
+    color: var(--subParagraph);
+    margin-top: 1.5rem;
+    height: 60px;
+}
+
+.course-overview-section .course-btn {
+    padding: 12px 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.course-overview-section .course-btn:hover {
+    transform: translateY(-5px);
+}
+
+.course-overview-section .course-btn a {
+    color: var(--subONEcolor);
+}
+
+
+
+/* end of course */
+/* Testimonials Section */
+/* Testimonial Section Styling */
+
+/*  ---- ----- */
+.testimonials {
+    margin-top: 5rem;
+    display: flex;
+    text-transform: capitalize;
+    color: var(--subONEcolor);
+}
+
+.testimonials .container {
+    background-color: var(--subBackColor);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials .testimonials-head h1 {
+    margin-bottom: 15px;
+    font-size: 2.425rem;
+}
+
+.testimonials .testimonials-separate {
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2.2rem;
+}
+
+.testimonials .testimonials-descreption {
+    width: 60%;
+}
+
+.testimonials .view-btn {
+    background-color: var(--subcolor);
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: fit-content;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 1px 0px #a5a3a3;
+    cursor: pointer;
+
+}
+
+.testimonials .view-btn:hover {
+    transform: translateY(-5px);
+}
+
+.testimonials a {
+    color: var(--subONEcolor);
+}
+
+.testimonials p {
+    color: var(--subParagraph);
+}
+
+.testimonials .box-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+.testimonials .container .box {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    background-color: var(--subcolor);
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonials-paragraph {
+    padding: 50px 50px;
+    color: var(--subParagraph);
+    font-size: 1rem;
+
+}
+
+.testimonials .testimonials-client {
+    background-color: #FCFCFD;
+    padding: 30px 50px;
+    align-items: center;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-color: #70809040;
+    box-shadow: 0px 0px 1px 0px #a5a3a3;
+
+
+}
+
+.testimonials-client .client {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.testimonials .client h1 {
+    font-size: 1.1rem;
+}
+
+.testimonials-client .client-btn {
+    background-color: var(--subcolor);
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: fit-content;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 0px #a5a3a3;
+
+}
+
+.testimonials .testimonials-client .client-btn:hover {
+    transform: translateY(-5px);
+
+}
+
+.testimonials-client {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Pricing Section */
+.pricing {
+    margin-top: 5rem;
+    display: flex;
+    text-transform: capitalize;
+}
+
+.pricing .container {
+    background-color: var(--subBackColor);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing .pricing-head h1 {
+    margin-bottom: 15px;
+    font-size: 2.425rem;
+}
+
+.pricing .pricing-separate {
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.pricing .pricing-descreption {
+    width: 60%;
+}
+
+.pricing .pricing-toggle {
+    background-color: var(--subcolor);
+    border-radius: 8px;
+    padding: 12px 12px;
+    width: fit-content;
+    cursor: pointer;
+
+}
+
+.pricing .pricing-toggle .toggle-yearly:hover {
+    color: var(--maincolor);
+}
+
+.pricing .pricing-toggle .toggle-monthly:hover {
+    color: var(--subONEcolor);
+}
+
+
+.pricing {
+    background: var(--subBackColor);
+    padding: 40px 0;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pricing-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toggle-monthly,
+.toggle-yearly {
+    background: var(--subcolor);
+    border-radius: 8px;
+    border: 1px none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-family: "Be Vietnam Pro";
+    font-size: 1rem;
+}
+
+.active {
+    background: orange;
+    color: white;
+}
+
+.pricing .pricing-descreption,
+.pricing .pricing-toggle {
+    margin-bottom: 4rem;
+}
+
+.pricing-plans {
+    background-color: var(--subcolor);
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrao;
+    justify-content: space-around;
+    padding: 80px;
+    border: 1px solid #F1F1F3;
+}
+
+.pricing-plan {
+    background-color: var(--subBackColor);
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 50px 30px 30px 30px;
+    margin: 0 10px;
+    text-align: center;
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-title {
+    background-color: var(--planBack);
+    border-radius: 8px;
+    border: 1px solid #FFEACC;
+    margin-bottom: 10px;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--subParagraph);
+}
+
+.plan-price {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.pricing .plan-duration {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--subParagraph);
+}
+
+.plan-features {
+    background-color: var(--subcolor);
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.plan-features .features-head {
+    text-align: center;
+    font-size: 1.025rem;
+    padding: 40px;
+    color: var(--subONEcolor);
+}
+
+.pricing .plan-features .features-check {
+    border: 1px solid #F1F1F3;
+    border-radius: 8px;
+    width: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    gap: 0.8rem;
+    text-align: left;
+}
+
+.plan-features .check-style {
+    background-color: var(--planBack);
+    border-radius: 4px;
+    align-items: center;
+    padding: 6px;
+}
+
+.plan-features .false {
+    background-color: var(--subcolor);
+    border: 1px solid #F1F1F3;
+}
+
+.plan-cta {
+    background: var(--maincolor);
+    color: var(--subcolor);
+    border: none;
+    padding: 20px 20px;
+    cursor: pointer;
+    width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 1rem;
+    font-family: "Be Vietnam Pro";
+}
+
+.site-footer {
+    background: var(--subcolor);
+    padding: 2rem 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: var(--subONEcolor);
+    border-top: 1px solid #eaeaea;
+}
+
+.site-footer a {
+    color: var(--subONEcolor);
+}
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section .footer-logo {
+    background-color: var(--maincolor);
+    border-radius: 8px;
+    display: flex;
+    padding: 4px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 1rem;
+}
+
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    color: var(--subHeader);
+    font-size: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li a {
+    color: var();
+    text-decoration: none;
+    line-height: 2.5;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--maincolor);
+}
+
+.footer-logo {
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    background-color: var(--subBackColor);
+    border-radius: 12px;
+    border: 1px solid #F1F1F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.footer-bottom p {
+    color: var(--subParagraph);
+    font-size: 0.875rem;
+}
+
+.-active a {
+    color: #59595A;
+}
+
+.footer-section-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+
+}
+
+.home-about-wrapper {
+    display: flex;
+    gap: 4rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #F1F1F3;
+}
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1rem;
+    }
+}
+
+
+
+
+/*  CSS style end */
+
+/*  media query for mutli-screens  */
+
+@media (max-width : 380px) {
+    .subtop-creative .icon {
+        padding: 2px 4px;
+    }
+
+    .top-creative .subtop-creative {
+        gap: 0.2rem;
+        padding: 15px 15px;
+        font-size: 0.6rem;
+    }
+
+    .top-creative .subtop-creative img {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar {
+        height: 70px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .navbar .head-text {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .head-text ul {
+        gap: 10px;
+    }
+
+    .navbar .dropdown_menu {
+        display: block;
+        left: 2rem;
+        width: unset;
+        position: fixed;
+        z-index: 4;
+    }
+
+    .subtop-creative .icon {
+        padding: 4px 6px;
+    }
+
+    .top-creative .subtop-creative {
+        gap: 0.2rem;
+        font-size: 0.7rem;
+    }
+
+    .top-creative .subtop-creative img {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .top-creative .creative-description h1 {
+        font-size: 2rem;
+    }
+
+    .top-creative .creative-description p {
+        font-size: 1rem;
+    }
+
+    .creative-buttons .explore-btn,
+    .pricing-btn {
+        border-radius: 8px;
+        padding: 16px 12px;
+    }
+
+    .top-creative .creative-buttons a {
+        font-size: 0.85rem;
+    }
+
+
+
+    .companies .container .row {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .companies .container .row>* {
+        margin-right: 20px;
+        padding-right: 1px;
+    }
+
+    .companies .container .line {
+        height: 4.5rem;
+        width: 1px;
+        margin-right: 10px;
+        background-color: #70809040;
+
+    }
+
+    .Site-Describe {
+        margin-top: 3rem;
+    }
+
+    .Site-Describe .image img {
+        max-width: 360;
+        height: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .benefits .benefits-separate {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .benefits .benefits-descreption {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .card-section .box {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+
+    .card-section .box h1 {
+        margin-bottom: 1rem;
+    }
+
+
+
+    .card-section .card-description p {
+        margin-bottom: 5rem;
+
+    }
+
+    .card-section .box .card-btn {
+        bottom: 0;
+    }
+
+    .courses-header-section .box {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+
+    .courses-header-section .course-separate {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .courses-header-section .course-descreption {
+        width: 100%;
+        margin-bottom: 15px;
+
+    }
+
+    .course-overview-section .box {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+    .course-overview-section .course-teacher {
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .course-overview-section .course-descreption p {
+        margin-bottom: 1rem;
+    }
+
+    .course-overview-section .course-btn {
+        margin-top: 0.5rem;
+        margin-bottom: 10px;
+    }
+
+    .course-overview-section .below-img {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .course-overview-section .course-teacher {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .testimonials .box {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+
+    .testimonials .testimonials-separate {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .testimonials .testimonials-descreption {
+        width: 100%;
+        margin-bottom: 15px;
+
+    }
+
+    .testimonials-client .client {
+        gap: 10px;
+    }
+
+    .testimonials .testimonials-client {
+        padding: 20px 30px;
+        gap: 0;
+    }
+
+    .testimonials-client img {
+        width: 50px;
+    }
+
+    .testimonials .testimonials-client h1 {
+        font-size: 1rem;
+    }
+
+    .testimonials .client-btn {
+        padding: 8px 6px;
+        text-align: center;
+        font-size: 0.8rem;
+
+    }
+
+    .pricing {
+        margin-top: 0px;
+    }
+
+    .pricing .pricing-separate {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pricing .pricing-descreption {
+        width: 100%;
+        margin-bottom: 15px;
+
+    }
+
+
+
+    .pricing-plans {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+
+    .pricing-plan {
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 20px;
+
+    }
+
+    .plan-title {
+        font-size: 1rem;
+
+    }
+
+    .plan-features {
+        padding: 0;
+        width: 100%;
+    }
+
+    .pricing-plan .plan-features .features-check {
+        font-size: 0.9 rem;
+        padding: 10px;
+        width: 90% !important;
+        gap: 1px;
+    }
+
+
+    .site-footer .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: first baseline;
+    }
+
+    .footer-section {
+        align-items: start;
+    }
+
+    .social-icons {
+        order: 3;
+        flex-direction: row;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .footer-section-group {
+        flex-direction: column;
+    }
+
+    .home-about-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 1.4rem;
+    }
+
+    .footer-section.-active.home,
+    .footer-section.-active.about {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.2rem;
+    }
+
+    .footer-section .-separate {
+        margin-top: 2rem;
+    }
+
+    .footer-section .-active {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-bottom {
+        order: 4;
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-icons a {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-section h4 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 280px) and (max-width:429px) {
+    .companies {
+        margin-top: 5rem;
+    }
+}
+
+@media (min-width: 578px) and (max-width:609px) {
+    .companies {
+        margin-top: 5rem;
+    }
+
+    .course-overview-section .box {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    .header-bar {
+        height: 70px;
+        font-size: 16px;
+    }
+
+    .navbar .head-text {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+        left: 2rem;
+        width: unset;
+        position: fixed;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .top-creative .subtop-creative img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .subtop-creative .icon {
+        padding: 4px 8px;
+    }
+
+    .top-creative .subtop-creative h1 {
+        font-size: 1.7rem;
+    }
+
+    .creative-description h1 {
+        font-size: 2.1rem;
+    }
+
+    .creative-description p {
+        font-size: 1.4rem;
+    }
+
+    .companies .container .row {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .companies .container .row>* {
+        margin-right: 20px;
+        padding-right: 1px;
+    }
+
+    .companies .container .line {
+        height: 4.5rem;
+        width: 1px;
+        margin-right: 10px;
+        background-color: #70809040;
+
+    }
+
+    .benefits .benefits-separate {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .benefits .benefits-descreption {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .course-overview-section .box {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container {
+        width: 80%;
+    }
+
+    .navbar .head-text {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+        left: 2rem;
+        width: unset;
+        position: fixed;
+    }
+
+    .top-creative .subtop-creative {
+        font-size: 1.6rem;
+    }
+
+    .companies {
+        margin-top: 2rem;
+    }
+
+    .companies .container .row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+    }
+
+    .companies .container .row>* {
+        margin-right: 20px;
+    }
+
+    .companies .container .line {
+        display: block;
+        height: 4.5rem;
+        width: 1px;
+        background-color: #70809040;
+        margin-right: 10px;
+    }
+
+    .companies .container .row img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .companies .container .row {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .companies .container .row>* {
+        margin-right: 20px;
+        padding-right: 1px;
+    }
+
+    .companies .container .line {
+        height: 4.5rem;
+        width: 1px;
+        margin-right: 10px;
+        background-color: #70809040;
+
+    }
+
+    .benefits .benefits-separate {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .benefits .benefits-descreption {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .course-overview-section .box {
+        flex: 1 1 100px;
+        margin-right: 0;
+    }
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+
+    .header-bar {
+        height: 70px;
+        font-size: 16px;
+    }
+
+    .head-text ul {
+        gap: 10px;
+    }
+
+    .course-overview-section .course-teacher {
+        font-size: 1rem;
+    }
+
+    .course-overview-section .course-btn {
+        flex: 1 1 50px;
+        ;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: calc(100% - 200px); 
+    }
+
+    .navbar {
+        padding: 1rem 2rem; 
+    }
+
+    .head-text ul {
+        gap: 20px; 
+    }
+
+
+    .top-creative .subtop-creative h1 {
+        font-size: 2.5rem;
+    }
+
+    .creative-description h1 {
+        font-size: 2.8rem;
+    }
+
+    .creative-description p {
+        font-size: 1.2rem;
+    }
+
+
+    .card-section .box {
+        flex: 0 0 calc(33.33% - 20px);
+    }
+
+
+    .testimonials .box {
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+ 
+    .pricing .pricing-plans {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .pricing-plan {
+        width: calc(50% - 40px); 
+        margin: 0 20px;
+    }
+
+ 
+    .footer-section-group {
+        justify-content: space-between;
+    }
+
+    .home-about-wrapper {
+        gap: 40px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .container {
+        width: calc(100% - 300px); /* Larger fixed-width container for wider screens */
+    }
+
+    /* Adjust navigation for more space */
+    .navbar .head-text ul {
+        gap: 30px; /* Increase gap for navigation links */
+    }
+
+    /* Adjust padding and font sizes for larger displays */
+    .navbar {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .top-creative .subtop-creative h1 {
+        font-size: 3rem; /* Larger text for extra large screens */
+    }
+
+    .creative-description h1 {
+        font-size: 3rem;
+    }
+
+    .creative-description p {
+        font-size: 1.5rem;
+    }
+
+   
+    .course-overview-section .box {
+        flex: 1 1 calc(33.33% - 20px); 
+    }
+
+    .footer-section-group {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .social-icons a {
+        width: 50px; 
+        height: 50px;
+    }
+    
+}
