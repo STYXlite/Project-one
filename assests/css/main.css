@@ -169,7 +169,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(35px);
 
 }
 
@@ -1120,6 +1120,9 @@ body {
 /*  media query for mutli-screens  */
 
 @media (max-width : 380px) {
+ .creative-buttons{
+     margin-bottom: 3rem;
+ }
     .subtop-creative .icon {
         padding: 2px 4px;
     }
@@ -1134,7 +1137,10 @@ body {
         width: 30px;
         height: 30px;
     }
+.companies{
+         margin-top: 3rem;
 
+}
 }
 
 @media (max-width: 576px) {
@@ -1473,13 +1479,18 @@ body {
     .companies {
         margin-top: 5rem;
     }
+    .creative-buttons{
+        margin-bottom: 3rem;
+    }
 }
 
 @media (min-width: 578px) and (max-width:609px) {
     .companies {
         margin-top: 5rem;
     }
-
+ .creative-buttons{
+        margin-bottom: 3rem;
+    }
     .course-overview-section .box {
         flex: 1 1 100%;
         margin-right: 0;
@@ -1536,7 +1547,12 @@ body {
     .creative-description p {
         font-size: 1.4rem;
     }
-
+ .creative-buttons{
+        margin-bottom: 3rem;
+    }
+    .companies {
+        margin-top: 3rem; 
+    }
     .companies .container .row {
         flex-wrap: nowrap;
         justify-content: flex-start;
@@ -1601,7 +1617,7 @@ body {
     }
 
     .companies {
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     .companies .container .row {
@@ -1718,7 +1734,12 @@ body {
     .creative-description p {
         font-size: 1.2rem;
     }
-    
+     .creative-buttons{
+        margin-bottom: 3rem;
+    }
+    .companies{
+        margin-top: 4rem;
+    }
     .card-section .box {
         flex: 0 0 calc(33.33% - 20px);
     }
@@ -1769,7 +1790,12 @@ body {
     .creative-description p {
         font-size: 1.5rem;
     }
-
+ .creative-buttons{
+        margin-bottom: 3rem;
+    }
+    .companies{
+        margin-top:3rem;
+    }
     .course-overview-section .box {
         flex: 1 1 calc(33.33% - 20px); 
     }
